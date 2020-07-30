@@ -1,2 +1,2 @@
 # ML-Projects
-Some exciting machine learning projects done by me
+In this project i have predicted heart disease with an accuracy of 86.88%
