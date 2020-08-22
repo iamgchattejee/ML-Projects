@@ -20,7 +20,7 @@ There are a total of 14 columns, the columns are described as followed:
 # Visualization
 After seeing the heatmap it was evident that there is not much correlation between the independent variables so no feature scaling is needed
 # Hyperparameters used for the model
-param=[{'penalty':['l1','l2','elasticnet','none'],'C':np.logspace(-4,0.15,4,20),
+param=[{'penalty':['l1','l2','elasticnet','none'],'C':np.logspace(-4,0.15,4,20),<br />
 'solver':['lbfgs','newton-cg','liblinear','sag','saga'],'max_iter':[90,1000,2500,5000]}]
 clf=GridSearchCV(classifier,param_grid=param,cv=5,verbose=True,n_jobs=-1)
 best_clf=clf.fit(X_train,y_train)
