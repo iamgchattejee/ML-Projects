@@ -27,7 +27,7 @@ best_clf=clf.fit(X_train,y_train)<br />
 best_parameters=best_clf.best_estimator_<br />
 
 # Final Model
-For a test model I have used Random Forest Classifier and measured the accuracy on the basis of Roc_Auc score.<br />
+For a test model I have used Logistic Regression and  have measured the accuracy on the basis of Roc_Auc score.<br />
 classifier =LogisticRegression(C=0.0024173154808041063, class_weight=None, dual=False,<br />
                    fit_intercept=True, intercept_scaling=1,max_iter=90, multi_class='auto', n_jobs=None, penalty='l2',<br />
                    random_state=0, solver='liblinear', tol=0.0001, verbose=0,<br />
