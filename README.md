@@ -3,7 +3,7 @@ Heart Disease detection algorithm based upon the Kaggle Dataset on Heart Disease
 # Parameters
 There are a total of 14 columns, the columns are described as followed:
 
-*age
+* age
 *sex
 *chest pain type (4 values)
 *resting blood pressure
