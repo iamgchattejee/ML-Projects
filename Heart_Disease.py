@@ -25,8 +25,7 @@ X_test=sc1.transform(X_test)
 # Training the Logistic Regression model on the Training set
 from sklearn.linear_model import LogisticRegression
 classifier =LogisticRegression(C=0.0024173154808041063, class_weight=None, dual=False,
-                   fit_intercept=True, intercept_scaling=1, l1_ratio=None,
-                   max_iter=90, multi_class='auto', n_jobs=None, penalty='l2',
+                   fit_intercept=True, intercept_scaling=1,max_iter=90, multi_class='auto', n_jobs=None, penalty='l2',
                    random_state=0, solver='liblinear', tol=0.0001, verbose=0,
                    warm_start=False)
 classifier.fit(X_train, y_train)
@@ -52,11 +51,6 @@ from sklearn.metrics import confusion_matrix,accuracy_score
 cm = confusion_matrix(y_test, y_predict)
 print(cm)
 
-from sklearn.metrics import mean_squared_error
-
-rmse=mean_squared_error(y_test, y_predict)
-
-accuracy1=accuracy_score(y_test,y_predict)
-
-r21=r2_score(y_test, y_predict)
+from sklearn.metrics import roc_auc_score
+roc=roc_auc_score(y_test, y_predict)
 
